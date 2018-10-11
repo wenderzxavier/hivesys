@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title{
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.section-header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-line{
+  width: 40px;
+  border: 1px solid #0cc4cc;
+  margin: 0px 15px;
+}
+
+#services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-card{
+  margin: 0 auto;
+}
+
+.service-icon{
+  width: 92px;
+  height: auto;
+}
+
+.service-title{
+  font-size: 24px;
+  color: #383838;
+}
+
+.service-description{
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: 1.7;
+}
