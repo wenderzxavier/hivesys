@@ -7,8 +7,8 @@ const Services = () => (
             <span className='title-line'></span><h1 className='section-title'>Serviços</h1>
         </header>
         <div className='flex'>
-            {serviceData.map((service) => (
-                <div className='service-card'>
+            {serviceData.map((service, key) => (
+                <div key={key} className='service-card'>
                     <img src={service.icon} alt='Two person icon' className='service-icon'></img>
                     <h3 className='service-title'>{service.type}</h3>
                     <p className='service-description'>{service.text}</p>
