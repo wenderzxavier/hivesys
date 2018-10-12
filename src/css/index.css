@@ -14,7 +14,7 @@ code {
 
 main{
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -43,12 +43,13 @@ main{
 }
 
 .service-card{
-  margin: 0 auto;
+  text-align: center;
+  width: 25%;
 }
 
 .service-icon{
   width: 92px;
-  height: auto;
+  height: 92px;
 }
 
 .service-title{
@@ -57,7 +58,20 @@ main{
 }
 
 .service-description{
+  font-family: 'Open Sans', sans-serif;
   color: #7c7c7c;
   font-size: 16px;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 1000px){
+  .service-card{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .service-card{
+    width: 100%;
+  }
 }
