@@ -6,7 +6,7 @@ const Services = () => (
         <header className='section-header'>
             <span className='title-line'></span><h1 className='section-title'>Serviços</h1>
         </header>
-        <div className='flex'>
+        <div id='service-info' className='flex'>
             {serviceData.map((service, key) => (
                 <div key={key} className='service-card'>
                     <img src={service.icon} alt='Two person icon' className='service-icon'></img>

@@ -18,6 +18,10 @@ main{
   margin: 0 auto;
 }
 
+h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .section-title{
   font-size: 58px;
   font-weight: 600;
@@ -107,10 +111,77 @@ main{
 }
 
 .hivegroup-description{
-  text-align: right;
+  text-align: justify;
   color: white;
   line-height: 1.7;
   font-family: 'Open Sans', sans-serif;
+}
+
+#about{
+  margin-top: 180px;
+}
+
+.about-heading{
+  color: rgb(12, 196, 204);
+  font-weight: 800;
+}
+
+#about-line{
+  border: 1px solid black;
+}
+
+.about-icon{
+  background-color: #352245;
+  border: 2px solid #352245;
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: 80px;
+}
+
+.flex-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+#about-cards{
+  flex-direction: column;
+}
+
+.about-title{
+  font-size: 19px;
+  font-weight: 600;
+  color: #383838;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-details{
+  line-height: 1.7;
+  color: #7c7c7c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.about-img{
+  height: auto;
+  max-width: 60%;
+}
+
+.content-positioning{
+  min-width: 350px;
+  width: 80%;
+}
+
+.about-text{
+  margin: 10px 0px 10px 30px;
+}
+
+#about-img2{
+  max-width: 450px;
 }
 
 @media screen and (max-width: 1325px){

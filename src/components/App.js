@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Services from './Services'
 import HiveGroup from './HiveGroup'
+import About from './About'
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <main>
         <Services />
         <HiveGroup />
+        <About />
       </main>
     )
   }
