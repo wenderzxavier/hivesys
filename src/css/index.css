@@ -35,7 +35,7 @@ main{
   margin: 0px 15px;
 }
 
-#services{
+.flex{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@ main{
 
 .service-title{
   font-size: 24px;
+  font-weight: 600;
   color: #383838;
 }
 
@@ -62,6 +63,52 @@ main{
   color: #7c7c7c;
   font-size: 16px;
   line-height: 1.7;
+}
+
+.content-left{
+  padding: 60px;
+  width: 40%;
+}
+
+img{
+  z-index: 10;
+}
+
+#hivegroup-info{
+  position: relative;
+  top: 80px;
+}
+
+#hive-group::before{
+  position: absolute;
+  content: '';
+  background-color: #352245;
+  height: 600px;
+  width: 66%;
+  margin-top: 60px;
+  left: 0;
+  z-index: 0;
+}
+
+#heading-hive{
+  font-size: 40px;
+  font-weight: bold;
+  color: #0cc4cc;
+}
+
+.subheading{
+  margin-bottom: 35px;
+}
+
+.orange{
+  color: #f86942;
+}
+
+.hive-description{
+  text-align: right;
+  color: white;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 1000px){

@@ -2,11 +2,11 @@ import React from 'react'
 import serviceData from '../utils/ServicesData'
 
 const Services = () => (
-    <section>
+    <section id='services'>
         <header className='section-header'>
             <span className='title-line'></span><h1 className='section-title'>Serviços</h1>
         </header>
-        <div id='services'>
+        <div className='flex'>
             {serviceData.map((service) => (
                 <div className='service-card'>
                     <img src={service.icon} alt='Two person icon' className='service-icon'></img>
