@@ -132,10 +132,9 @@ h1, h2, h3{
 
 .about-icon{
   background-color: #352245;
-  border: 2px solid #352245;
+  padding: 5px;
   border-radius: 50%;
   width: 50px;
-  margin-bottom: 80px;
 }
 
 .flex-content{
@@ -184,6 +183,10 @@ h1, h2, h3{
   max-width: 450px;
 }
 
+.header-left{
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 1325px){
   #hive-group::before{
     width: 100%;
@@ -201,6 +204,20 @@ h1, h2, h3{
 @media screen and (max-width: 1000px){
   .service-card{
     width: 50%;
+  }
+
+  .about-img{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #about02{
+    display: none;
+  }
+
+  #about01{
+    flex-wrap: wrap;
   }
 }
 

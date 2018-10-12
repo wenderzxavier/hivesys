@@ -41,4 +41,4 @@ const about2 = [
     }
 ]
 
-export default { about1, about2 }
+export { about1, about2 }
