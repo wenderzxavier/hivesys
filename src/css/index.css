@@ -192,6 +192,43 @@ h1, h2, h3{
   justify-content: center;
 }
 
+.slider{
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Change these values if more slides are added*/
+@keyframes moveSlide{
+  0%, 30%{
+    margin-left: 0px;
+  }
+
+  38%, 60% {
+    margin-left: -100%;
+  }
+
+  68%, 95%{
+    margin-left: -200%;
+  }
+}
+
+.slide{
+  width: 800%; /* Change this value if more slides are added*/
+  height: 240px;
+  animation: moveSlide 10s ease-in infinite;
+  overflow: hidden;
+}
+
+.partner{
+  float: left;  
+}
+
+.slide-selector{
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1325px){
   #hive-group::before{
     width: 100%;
