@@ -32,7 +32,7 @@ const About = () => (
             <div className='flex-content'>
                 <div className='flex-content flex-column'>
                     {about2.map((data, key) => (
-                        <div className='flex-content content-positioning'>
+                        <div key={key} className='flex-content content-positioning'>
                             <img src={data.icon} alt='Hive icon' className='about-icon'></img>
                             <div className='about-text'>
                                 <p className='about-title'>{data.title}</p>

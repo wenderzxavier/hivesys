@@ -48,7 +48,8 @@ h1, h2, h3{
 
 .service-card{
   text-align: center;
-  width: 25%;
+  width: 22%;
+  padding: 0 15px;
 }
 
 .service-icon{
@@ -187,6 +188,10 @@ h1, h2, h3{
   justify-content: flex-start;
 }
 
+.header-center{
+  justify-content: center;
+}
+
 @media screen and (max-width: 1325px){
   #hive-group::before{
     width: 100%;
@@ -203,7 +208,7 @@ h1, h2, h3{
 
 @media screen and (max-width: 1000px){
   .service-card{
-    width: 50%;
+    width: 40%;
   }
 
   .about-img{
