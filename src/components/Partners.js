@@ -3,7 +3,7 @@ import partnersLogo from '../utils/PartnersLogo'
 import '../css/index.css'
 
 const Partners = () => (
-    <div id='partners'>
+    <section id='partners'>
         <header className='section-header header-center'>
             <h1 className='section-title about-heading'>Parceiros</h1><span id='about-line' className='title-line'></span>
         </header>
@@ -11,12 +11,12 @@ const Partners = () => (
             <div className='slide'>
                 {partnersLogo.map((data, key) => (
                     <div key={key} className='partner'>
-                        <img src={data} alt=''></img>
+                        <img src={data} alt='logo'></img>
                     </div>
                 ))}
             </div>
         </div>
-    </div>
+    </section>
 )
 
 export default Partners

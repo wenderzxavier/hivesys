@@ -195,29 +195,44 @@ h1, h2, h3{
 .slider{
   overflow: hidden;
   margin: 0 auto;
-  width: 100%;
-}
-
-/* Change these values if more slides are added*/
-@keyframes moveSlide{
-  0%, 30%{
-    margin-left: 0px;
-  }
-
-  38%, 60% {
-    margin-left: -100%;
-  }
-
-  68%, 95%{
-    margin-left: -200%;
-  }
+  display: flex;
+  justify-content: center;
+  max-width: 433px;
 }
 
 .slide{
   width: 800%; /* Change this value if more slides are added*/
   height: 240px;
-  animation: moveSlide 10s ease-in infinite;
+  animation: moveSlide 20s ease-in infinite;
   overflow: hidden;
+}
+
+/* Change these values if more slides are added*/
+@keyframes moveSlide{
+  0%, 10%{
+    margin-left: 0;
+  }
+  12.5%, 22.5%{
+    margin-left: -100%;
+  } 
+  25%, 35% {
+    margin-left: -200%;
+  }
+  37.5%, 47.5%{
+    margin-left: -300%;
+  }
+  50%, 60% {
+    margin-left: -400%;
+  }
+  62.5%, 72.5%{
+    margin-left: -500%;
+  }
+  75%, 85% {
+    margin-left: -600%;
+  }
+  87.5%, 97.5%{
+    margin-left: -700%;
+  }
 }
 
 .partner{
@@ -227,6 +242,12 @@ h1, h2, h3{
 .slide-selector{
   display: flex;
   justify-content: center;
+}
+
+.partner img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1325px){
@@ -260,6 +281,10 @@ h1, h2, h3{
 
   #about01{
     flex-wrap: wrap;
+  }
+
+  #partners{
+    display: none;
   }
 }
 
