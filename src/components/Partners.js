@@ -5,17 +5,15 @@ import '../css/index.css'
 const Partners = () => (
     <section id='partners'>
         <header className='section-header header-center'>
-            <h1 className='section-title about-heading'>Parceiros</h1><span id='about-line' className='title-line'></span>
+            <h1 className='section-title'>Parceiros</h1><span className='title-line'></span>
         </header>
-        <div className='slider'>
-            <div className='slide'>
-                {partnersLogo.map((data, key) => (
-                    <div key={key} className='partner'>
-                        <img src={data} alt='logo'></img>
-                    </div>
-                ))}
-            </div>
-        </div>
+        <div id='partners-data'>
+            {partnersLogo.map((icon, key) => (
+                <div className='icon' key={key}>
+                    <img src={icon} alt='Partner logo'/>
+                </div>
+            ))}
+        </div>  
     </section>
 )
 

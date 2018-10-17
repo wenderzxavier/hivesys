@@ -192,63 +192,37 @@ h1, h2, h3{
   justify-content: center;
 }
 
-.slider{
-  overflow: hidden;
-  margin: 0 auto;
+#partners-data{
   display: flex;
   justify-content: center;
-  max-width: 433px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.slide{
-  width: 800%; /* Change this value if more slides are added*/
-  height: 240px;
-  animation: moveSlide 20s ease-in infinite;
-  overflow: hidden;
-}
-
-/* Change these values if more slides are added*/
-@keyframes moveSlide{
-  0%, 10%{
-    margin-left: 0;
-  }
-  12.5%, 22.5%{
-    margin-left: -100%;
-  } 
-  25%, 35% {
-    margin-left: -200%;
-  }
-  37.5%, 47.5%{
-    margin-left: -300%;
-  }
-  50%, 60% {
-    margin-left: -400%;
-  }
-  62.5%, 72.5%{
-    margin-left: -500%;
-  }
-  75%, 85% {
-    margin-left: -600%;
-  }
-  87.5%, 97.5%{
-    margin-left: -700%;
-  }
-}
-
-.partner{
-  float: left;  
-}
-
-.slide-selector{
-  display: flex;
-  justify-content: center;
-}
-
-.partner img{
-  width: 100%;
+.icon{
   max-width: 100%;
-  height: auto;
+  width: 280px;
+  border: 2px solid rgba(231, 228, 228, 0.5);
+  margin: 5px;
+  transition: .5s;
 }
+
+#partners{
+  margin: 10px 0px;
+}
+
+.icon:hover{
+  border: 2px solid rgb(209, 206, 206);
+  box-shadow: 4px 4px 15px rgba(209, 206, 206, .8), -2px -2px 15px rgba(209, 206, 206, .5);
+  transition: .5s;
+  transform: scale(1.05)
+}
+
+.icon img{
+  height: auto;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 1325px){
   #hive-group::before{
@@ -272,6 +246,10 @@ h1, h2, h3{
   .about-img{
     width: 40%;
   }
+
+  .icon{
+    width: 240px;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -282,10 +260,10 @@ h1, h2, h3{
   #about01{
     flex-wrap: wrap;
   }
-
-  #partners{
-    display: none;
+  .icon{  
+    width: 160px;
   }
+
 }
 
 @media screen and (max-width: 480px){
@@ -296,4 +274,9 @@ h1, h2, h3{
   #hive-group::before{
     height: 800px; 
   }
+
+  .icon{  
+    width: 45%;
+  }
+
 }
