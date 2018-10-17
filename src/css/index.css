@@ -193,9 +193,6 @@ h1, h2, h3{
 }
 
 #partners-data{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -223,6 +220,103 @@ h1, h2, h3{
   width: 100%;
 }
 
+#contact{
+  background-color: #352245;
+  padding: 50px 0px;
+}
+
+#footer{
+  text-align: center;
+  color: #838383;
+  height: 100px;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-left{
+  align-items: flex-start;
+}
+
+#contact{
+  padding: 100px 0px;
+}
+
+.contact-header{
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: none;
+  color: #f86942;
+}
+
+#left-panel{
+  width: 30%;
+  max-width: 300px;
+}
+
+#right-panel{
+  width: 60%;
+  max-width: 800px;
+}
+
+.contact-icon{
+  color: #f86942;
+  margin-right: 20px;
+}
+
+.spacing{
+  margin: 25px 0;
+}
+
+#left-panel p{
+  color: white;
+  font-size: 15px;
+}
+
+.form-header{
+  font-size: 35px;
+  text-transform: none;
+  color: #0cc4cc;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.user-data input, textarea{
+  color: #f86942;
+  font-size: 16px;
+  border-width: 0px 0px 2px 0px;
+  background: transparent;
+}
+
+.form-text textarea{
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  border-width: 0px 0px 2px 0px;
+  width: 100%;
+  height: 172px;
+}
+
+.user-data input::placeholder, textarea::placeholder{
+  color: white;
+}
+
+#submit{
+  background-color: #282828;
+  cursor: pointer;
+  border: none;
+  padding: 19px 31px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-top: 20px;
+}
+
+#submit:hover{
+  background-color: #383737;
+}
 
 @media screen and (max-width: 1325px){
   #hive-group::before{
