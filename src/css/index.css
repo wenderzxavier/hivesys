@@ -177,7 +177,7 @@ h1, h2, h3{
 }
 
 .about-text{
-  margin: 10px 0px 10px 30px;
+  margin: 10px 10px 10px 30px;
 }
 
 #about-img2{
@@ -417,4 +417,14 @@ h1, h2, h3{
     flex-wrap: wrap;
   }
 
+}
+
+@media screen and (max-width: 320px){
+  .about-icon{
+    display: none;
+  }
+
+  #hive-group::before{
+    padding: 50px 0;
+  }
 }
