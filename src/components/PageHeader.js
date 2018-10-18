@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PageHeader = () => (
+const PageHeader = (props) => (
     <div id='page-header'>
-        <h1>{this.props.title}Págian Teste</h1>
+        <h1>{props.title}</h1>
     </div>
 )
 
