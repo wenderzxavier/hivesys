@@ -334,6 +334,12 @@ h1, h2, h3{
   background-color: #383737;
 }
 
+#page-header{
+  width: 100%;
+  height: 400px;
+  background: url('../img/page-title-background.jpg');
+}
+
 @media screen and (max-width: 1325px){
   #hive-group::before{
     width: 100%;
