@@ -15,14 +15,14 @@ const Contact = () => (
             <div>
                 <legend className='form-header'>Entre em Contato</legend>
             </div>
-            <form>
+            <form id='contact-form'>
                 <div className='user-data'>
                     <input type='text' placeholder='Nome Completo*' name='name' />
                     <input type='email' placeholder='Email*' name='email' />
                     <input type='text' placeholder='Assunto*' name='subject' />
                 </div>
                 <div className='form-text'>
-                    <textarea rows='4' placeholder='Mensagem*' />
+                    <textarea rows='3' placeholder='Mensagem*' />
                 </div>
                 <input type='Submit' id='submit' value='ENVIAR'></input>
             </form>
