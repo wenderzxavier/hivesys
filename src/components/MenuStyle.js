@@ -2,7 +2,7 @@ import React from 'react'
 
 const MenuStyle = (props) => (
     <div id={props.menuStyle}>
-        {props.menuStyle === 'menu-mobile' ? <a href='#close' id='close-menu'><i class="fas fa-chevron-left fa-lg close-btn"></i></a> : ''}
+        {props.menuStyle === 'menu-mobile' ? <a href='#close' id='close-menu'><i className="fas fa-chevron-left fa-lg close-btn"></i></a> : ''}
         <a href='#services' className={props.linkStyle}>Serviços</a>
         <a href='#about' className={props.linkStyle}>Sobre</a>
         <a href='#portfolio' className={props.linkStyle}>Projetos</a>

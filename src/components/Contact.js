@@ -24,7 +24,7 @@ const Contact = () => (
                 <div className='form-text'>
                     <textarea rows='3' placeholder='Mensagem*' />
                 </div>
-                <input type='Submit' id='submit' value='ENVIAR'></input>
+                <input type='Submit' id='submit' defaultValue='ENVIAR'></input>
             </form>
         </div>
     </section>

@@ -13,6 +13,41 @@ code {
     monospace;
 }
 
+#slider{
+  background-color: #414141;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide-bullet{
+  position: relative;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  transition: .5s ease-in;
+  cursor: pointer;
+}
+
+.slide-bullet:hover{
+  border: 8px solid white;
+}
+
+.slide-bullet:hover .slider-btn{
+  transform: scale(.4);
+  background-color: white;
+}
+
+.slider-btn{
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .3);
+  border: 5px solid white;
+  transition: .5s;
+}
+
 main{
   width: 90%;
   max-width: 1300px;
@@ -74,6 +109,10 @@ h1, h2, h3{
 .content-left{
   padding: 60px;
   width: 40%;
+}
+
+#hive-group{
+  margin: 25px 0;
 }
 
 #hivegroup-img{
@@ -496,6 +535,8 @@ h1, h2, h3{
 .close-btn:hover{
   color: white;
 }
+
+
 
 @media screen and (max-width: 1325px){
   #hive-group::before{
