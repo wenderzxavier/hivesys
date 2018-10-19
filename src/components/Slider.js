@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import Slide1 from '../utils/slides/Slide01'
 
 class Slider extends Component {
     render() {
         return (
             <section id='slider'>
-                <div className='slide-bullet'>
-                    <span className='slider-btn'></span>
+                <Slide1 />
+                <div id='slider-selector'>
+                    <div className='slide-bullet'><span className='slider-btn'></span></div>
+                    <div className='slide-bullet'><span className='slider-btn'></span></div>
                 </div>
             </section>
         )
