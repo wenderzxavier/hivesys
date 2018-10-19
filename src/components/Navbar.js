@@ -3,14 +3,35 @@ import logo from '../img/logo.png'
 import MenuStyle from '../components/MenuStyle'
 
 class Navbar extends Component {
-    componentDidMount() {
-        document.getElementById('menu-btn-mobile').addEventListener('click', () => (
-            document.getElementById('block-back').style.display = 'block'
-        ))
+    changeNavBackground = (color) => {
+        document.getElementById('navigation').style.backgroundColor = color
+    }
 
-        document.getElementById('block-back').addEventListener('click', () => (
+    componentDidMount() {
+        let menuMobile = document.getElementById('menu-mobile')
+
+        document.getElementById('menu-btn-mobile').addEventListener('click', () => {
+            document.getElementById('block-back').style.display = 'block'
+            menuMobile.style.width = '300px'
+            menuMobile.style.padding = '80px 20px'
+
+        })
+        document.getElementById('block-back').addEventListener('click', () => {
             document.getElementById('block-back').style.display = 'none'
-        ))
+            menuMobile.style.width = '0'
+            menuMobile.style.padding = '0'
+        })
+
+        document.getElementById('close-menu').addEventListener('click', () => {
+            document.getElementById('block-back').style.display = 'none'
+            menuMobile.style.width = '0'
+            menuMobile.style.padding = '0'
+        })
+
+        window.onscroll = () => {
+            (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) ?
+                this.changeNavBackground('#352245') : this.changeNavBackground('transparent')
+        }
     }
 
     render() {

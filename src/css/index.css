@@ -399,7 +399,7 @@ h1, h2, h3{
   top: 0;
   height: 60px;
   padding: 10px 0;
-  width: 100%
+  width: 100%;
 }
 
 #navbar{
@@ -431,7 +431,7 @@ h1, h2, h3{
 }
 
 .nav-logo{
-  width: 45%;
+  width: 50%;
 }
 
 #menu-btn-mobile{
@@ -466,8 +466,9 @@ h1, h2, h3{
   top: 0;
   right: 0;
   height: 100vh;
-  width: 300px;
-  padding: 80px 20px;
+  width: 0;
+  padding: 0;
+  transition: .4s;
 }
 
 .nav-mobile{
