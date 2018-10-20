@@ -4,7 +4,7 @@ import logoSlide from '../../img/logo-slide-01.png'
 class Slide01 extends Component {
     render() {
         return (
-            <div id='slide1'>
+            <div id='slide1' className='slide-position'>
                 <div className='slider-content'>
                     <h1 className='title-slider-1'>Seja Bem-Vindo à</h1>
                     <div className='subtitle-slider-1'>HIVE<span className='subtitle-slider-1-diff'>sys</span></div>
