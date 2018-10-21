@@ -109,6 +109,10 @@ code {
   background-color: white;
 }
 
+.bullet-active{
+  border: 2px solid white;
+}
+
 .slider-btn{
   position: absolute;
   top: 0;
@@ -125,7 +129,7 @@ code {
   width: 100%;
   height: 100%;
   z-index: 1;
-  transition: 1s;
+  transition: 2s ease-in-out;
 }
 
 #slide1{
