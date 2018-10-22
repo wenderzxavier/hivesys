@@ -33,35 +33,6 @@ class Slider extends Component {
         setInterval(()=> {
             this.changeSlide(slide0, slide1, 1)
         }, 10000)
-
-        /*
-        
-        document
-          .querySelectorAll('ul.submenu_1.menushow, ul.submenu_1 .menushow')
-          .forEach(function(el) {
-            el.classList.remove('menushow');
-          })
-        
-        
-          
-        <ul class="submenu_1 menushow">
-          <li class="sub">
-              <ul class="submenu_2 menushow">
-                  <li>
-                      <ul class="submenu_2 menushow">
-                          <li>
-                              <ul class="submenu_2 menushow">
-                                  <li></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li></li>
-              </ul>
-          </li>
-        </ul>
-        */
-
     }
 
     render() {
