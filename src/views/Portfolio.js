@@ -6,7 +6,10 @@ import Navbar from '../components/Navbar'
 
 const Portfolio = () => (
     <div>
-        <header><Navbar /><PageHeader title='Portfólio' /></header>
+        <header>
+            <Navbar />
+            <PageHeader title='Portfólio' />
+        </header>
         <main>
             <Projects />
         </main>

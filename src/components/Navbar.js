@@ -38,7 +38,9 @@ class Navbar extends Component {
         return (
             <div id='navigation'>
                 <nav id='navbar'>
-                    <a href='www.hivesys.com.br' className='nav-logo'><img src={logo} alt='logo'></img></a>
+                    <div className='logo-wrapper'>
+                        <a href='/' className='nav-logo'><img src={logo} alt='logo'></img></a>
+                    </div>
                     <MenuStyle menuStyle='menu-top' linkStyle='nav-link' />
                     <div id='menu-btn-mobile'>
                         <span className='hamburguer'></span>
